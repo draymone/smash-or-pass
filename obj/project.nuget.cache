@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "cHbeFN3q1+cnj1R9COBr02V2xSNJpVXh8jkyHpxP8oPxZavdudw15I3mH/P26a1S7275u2WE2zm5i2uhcqGRmw==",
+  "success": true,
+  "projectFilePath": "D:\\Dev\\Slns_VS\\SmashOrPass\\SmashOrPass\\SmashOrPass.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}

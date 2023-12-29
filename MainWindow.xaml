@@ -1,0 +1,31 @@
+﻿<Window x:Class="SmashOrPass.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SmashOrPass"
+        mc:Ignorable="d"
+        Title="SMASH or PASS" Height="1080" Width="1920"
+        WindowStartupLocation="CenterScreen" >
+    <Grid>
+        <!-- Score display-->
+        <Label x:Name="Smash" Content="Smash: 0" HorizontalAlignment="Left"  Margin="0,0,0,0" VerticalAlignment="Top" Height="120" Width="900" FontSize="90" FontFamily="Barlow" Foreground="Red"   HorizontalContentAlignment="Left"/>
+        <Label x:Name="Pass"  Content="Pass: 0"  HorizontalAlignment="Right" Margin="0,0,0,0" VerticalAlignment="Top" Height="120" Width="900" FontSize="90" FontFamily="Barlow" Foreground="Green" HorizontalContentAlignment="Right"/>
+
+        <!-- Image -->
+        <Image x:Name="TestedImage" Height="800" Width="1800" Margin="60,125,60,239">
+            <Image.Source>
+                <BitmapImage DecodePixelWidth="1800" UriSource="D:\Documents\SmashOrPass\0.jpg" />
+            </Image.Source>
+        </Image>
+
+        <!-- Buttons -->
+        <Grid Margin="0,357,0,0">
+            <Button Content="SMASH" HorizontalAlignment="Left"  Margin="740,0,0,0" VerticalAlignment="Bottom" Height="120" Width="210" Click="SmashClick" FontSize="50" FontFamily="Barlow"/>
+            <Button Content="PASS"  HorizontalAlignment="Right" Margin="0,0,740,0" VerticalAlignment="Bottom" Height="120" Width="210" Click="PassClick"  FontSize="50" FontFamily="Barlow"/>
+            <Button Content="Cancel" HorizontalAlignment="Left"  Margin="670,0,0,0" VerticalAlignment="Bottom" Height="60" Width="50" Click="CancelSmash"/>
+            <Button Content="Cancel" HorizontalAlignment="Right" Margin="0,0,670,0" VerticalAlignment="Bottom" Height="60" Width="50" Click="CancelPass"/>
+        </Grid>
+
+    </Grid>
+</Window>
