@@ -37,13 +37,19 @@ namespace SmashOrPass
             numberOfImages = Directory.GetFiles(pathPrefix).Length;
         }
 
+        private void WindowKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Left) SmashClick(this, null);
+            if (e.Key == Key.Right) PassClick(this, null);
+        }
+
         private void SmashClick(object sender, RoutedEventArgs e)
         {
             smash++;
             DisplaySmash();
             NextImage();
         }
-
+        
         private void PassClick(object sender, RoutedEventArgs e)
         {
             pass++;
@@ -95,7 +101,7 @@ namespace SmashOrPass
                 return;
             }
 
-            BitmapImage myBitmapImage = new BitmapImage();
+            BitmapImage myBitmapImage = new();
             myBitmapImage.BeginInit();
             myBitmapImage.UriSource = new Uri(pathPrefix + actualImage + pathSuffix);
             myBitmapImage.DecodePixelWidth = 1800;

@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:SmashOrPass"
         mc:Ignorable="d"
         Title="SMASH or PASS" Height="1080" Width="1920"
-        WindowStartupLocation="CenterScreen" >
+        WindowStartupLocation="CenterScreen"
+        KeyDown="WindowKeyDown">
     <Grid>
         <!-- Score display-->
         <Label x:Name="Smash" Content="Smash: 0" HorizontalAlignment="Left"  Margin="0,0,0,0" VerticalAlignment="Top" Height="120" Width="900" FontSize="90" FontFamily="Barlow" Foreground="Red"   HorizontalContentAlignment="Left"/>
