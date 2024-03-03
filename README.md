@@ -1,5 +1,7 @@
 # Smash or Pass
 
+Thi is an app that allows you to play easily play the Smash or Pass game, with your own pictures
+
 ## How to configure
 Create a folder named **SmashOrPass** located in **D:\\Documents\\**, it needs to be written exactly like this and it's case sensitive.\
 Then fill the folder with your images, they need to be named **0.jpg**, **1.jpg**, **2.jpg** ... They will appear in this order.
